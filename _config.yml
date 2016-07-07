@@ -1,0 +1,16 @@
+
+production: false
+baseline: Développer des entreprises saines et humaines
+
+url: "http://ajiro.fr"
+baseurl: ""
+
+markdown: kramdown
+
+gems:
+- jekyll-paginate
+- jekyll-assets
+
+exclude:
+- README.md
+- Gemfile

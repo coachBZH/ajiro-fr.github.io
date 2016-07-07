@@ -1,0 +1,146 @@
+/* == General */
+
+.text-justify {
+  -moz-hyphens: auto;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.spacer-20 {
+  margin-top: 20px;
+}
+
+.spacer-40 {
+  margin-top: 40px;
+}
+
+.spacer-80 {
+  margin-top: 80px;
+}
+
+.debug {
+  border: solid 1px red;
+}
+
+
+/* == Colors */
+
+
+
+/* == Fonts */
+
+@font-face {
+  font-family: "Linux Biolinum";
+  font-style: normal;
+  font-weight: normal;
+  src: url('/assets/fonts/LinBiolinum_R.otf') format('opentype');
+  font-smooth: always;
+}
+
+@font-face {
+  font-family: "Linux Biolinum";
+  font-style: italic;
+  font-weight: normal;
+  src: url('/assets/fonts/LinBiolinum_RI.otf') format('opentype');
+  font-smooth: always;
+}
+
+@font-face {
+  font-family: "Linux Biolinum";
+  font-style: normal;
+  font-weight: bold;
+  src: url('/assets/fonts/LinBiolinum_RB.otf') format('opentype');
+  font-smooth: always;
+}
+
+body {
+  font-family: 'Linux Biolinum';
+  font-size: 18px;
+}
+
+
+/* == Sections */
+
+.footer {
+  background-color: #2e3436;
+	color: #eeeeec;
+  margin-top : 2em;
+  padding-bottom : 2em;
+  padding-top : 2em;
+}
+
+.footer h1 {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.footer i {
+  background-color: #555753;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer a {
+	color: #eeeeec;
+}
+
+.circled-icon i {
+  background-color: #eeeeec;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 2px;
+  vertical-align: middle;
+}
+
+.circled-icon a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.icon {
+  font-size: 50px;
+  text-align: center;
+  color: #848484;
+}
+
+.partner-logo {
+  text-align: center;
+  margin: 2px;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.partner-logo:hover {
+  border: 1px solid #eee;
+  filter: none;
+}
+
+.partner-logo div {
+  line-height: 12px;
+}
+
+.partner-logo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.short-logo {
+  width: 120px;
+  height: 120px;
+  line-height: 100px;
+}
+.short-logo img {
+  width: 100px;
+}

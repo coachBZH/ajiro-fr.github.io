@@ -1,1 +1,70 @@
-Ajiro
+---
+layout: default
+
+description: >
+    Ajiro est un groupe de personnes passionnées, curieuses qui se consacre développer des entreprises saines et humaines.
+---
+<div class="text-center">
+  <h1>Ajiro</h1>
+</div>
+<div class="row spacer-40">
+  <div class="col-md-12">
+    <div class="jumbotron">
+      <p class="text-justify">
+        Ajiro est un groupe de personnes passionnées, curieuses qui se consacre {{site.baseline | downcase }}.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class='row spacer-20'>
+  <div class='col-md-12 '>
+    <h2>Nos Valeurs</h2>
+  </div>
+</div>
+<div class='row spacer-20'>
+  <div class='col-md-12 text-justify'>
+    <h3>Confiance</h3>
+    <p>Nous croyons dans la valeur morale, affective et professionnelle de nos interlocuteurs, nous ne présupposons pas la tromperie, la trahison ou l'incompétence de leur part. Nous ne sommes pas naïfs, et nous savons aussi nous protéger quand nécessaire, mais ces exceptions ne doivent pas nuire à la majorité.</p>
+    <p>Comme nous avons confiance les uns dans les autres, nous nous efforçons de rendre l'information ouverte et transparente, sans la restreindre ni la contrôler.</p>
+
+    <h3>Innovation</h3>
+    <p>Nous imaginons, expérimentons les nouvelles idées. Nous valorisons l'apprentissage, la curiosité et les prises de risque qui aident à la création.</p>
+    <p>Droit à l'erreur !</p>
+
+    <h3>Partage</h3>
+    <p>Nous valorisons le partage et la réciprocité.</p>
+
+    <h3>Simplicité</h3>
+
+    <h3>Bienveillance</h3>
+    <p>On se dit les choses. Nous nous efforçons d'avoir des interactions dans le respect et l'écoute. Dans ce cadre, nous sommes à l'aise pour évoquer nos divergences.</p>
+
+    <h3>Humour</h3>
+  </div>
+</div>
+
+<div class='row spacer-20'>
+  <div class='col-md-12 '>
+    <h2>L'équipe</h2>
+  </div>
+</div>
+{% for member in site.data.team %}
+  <div class='row spacer-20'>
+    <div class='col-md-10'>
+      <h3>
+      {{member.name}}
+      <span class="circled-icon">
+        <a href='mailto:{{member.mail}}'><i class='fa fa-envelope'></i></a>
+        {% for link in member.social %}
+          <a href='{{link.url}}'><i class='fa {{link.icon}}'></i></a>
+        {% endfor %}
+      </span>
+      </h3>
+      <p>{{member.bio | markdownify}}</p>
+    </div>
+    <div class='col-md-2'>
+      <img alt="Photo {{member.name}}" class="img-responsive img-thumbnail" src="/assets/images/team/{{member.photo}}" />
+    </div>
+  </div>
+{% endfor %}
