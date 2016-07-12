@@ -35,3 +35,17 @@
     manifestes [Artisans du Logiciel](http://manifesto.softwarecraftsmanship.org/) et [Agile](http://agilemanifesto.org/).
   mail: oalbiez@azae.net
   mobile: "+33662767812"
+
+- name: Hervé TABOUCOU
+  photo: 
+  social:
+  - url: https://github.com/coachbzh
+    icon: fa-github
+  - url: https://twitter.com/coachbzh
+    icon: fa-twitter
+  - url: https://fr.linkedin.com/in/hervé-taboucou-bb22b4
+    icon: fa-linkedin
+  bio: >
+  mail: herve.taboucou@gmail.com
+  mobile: "+33660549971"
+-
